@@ -1,0 +1,17 @@
+apps:
+  - script   : server.js
+    name     : 'chatapp'
+    instances: 1
+    exec_mode: cluster
+    watch  : true
+    env    :
+      NODE_ENV: development
+      # https_server_port  : 5000
+      http_server_port   : 3000
+      # db_config:
+      #   avos_single_thread:
+      #     multipleStatements: true
+      #     host        : 'localhost'
+      #     user        : 'root'
+      #     password    : 'root'
+      #     database    : 'chatapp'

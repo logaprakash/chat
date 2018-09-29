@@ -1,0 +1,74 @@
+.jumbotron {
+	padding-left: 30px;
+}
+
+.login-wrap {
+	text-align: center;
+	width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.login-wrap .input-group,
+.login-wrap form,
+.login-wrap input {
+	width: 100%;
+}
+
+.h2room {
+	padding-left: 40px;
+}
+
+.chatdiv {
+	overflow-y: auto;
+	height: 300px;
+	max-height: 800px;
+}
+
+/*============================
+=            Chat            =
+============================*/
+
+#chat {
+    width: 100vw;
+    height: 100vh;
+}
+.top-bar {
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 15px;
+}
+.top-bar span{
+    font-size: 20px;
+    color: #222;
+    margin-right: 15px;
+}
+.msgBox {
+    max-width: 1000px;
+    height: calc(100% - 100px);
+    overflow: auto;
+    position: relative;
+}
+.form-group {
+    position: fixed;
+    bottom: 0px;
+}
+#msgBox {
+    position: relative;
+}
+.footer {
+    height: 50px;
+    padding: 5px 15px;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+.footer input {
+    height: 100%;
+    border: none;
+    width: calc(100% - 100px);
+}
+.footer .btn {
+    height: 100%;
+    width: 70px;
+}
+
+/*=====  End of Chat  ======*/

@@ -1,0 +1,46 @@
+<div ng-controller="loginController">
+    <div class="jumbotron">
+        <h1>
+            Chat app
+        </h1>
+    </div>
+    <div class="login-wrap">
+        <h2 class="h2login">
+            Login
+        </h2>
+        <br>
+            <br>
+                <div class="chatdiv">
+                    <div class="input-group">
+                        <form>
+                            <input ng-model="username" placeholder="Username" size="35" type="text"/>
+                            <span>
+                                <div class="alert alert-dismissible alert-danger" ng-show="errorText">
+                                    <button class="close" data-dismiss="alert" ng-click="errorText=''" type="button">
+                                        ×
+                                    </button>
+                                    <strong>
+                                        {{errorText}}
+                                    </strong>
+                                </div>
+                            </span>
+                            <br>
+                                <br>
+                                    <input type="password" class="form-control" id="inputPassword" ng-model="password" placeholder="Password" size="35" ng-show="admin"/>
+                                    <input ng-model="room" placeholder="Room" size="35" type="text" ng-hide="admin"/>
+                                    <br>
+                                        <br>
+                                            <button class="btn btn-primary pull-right" ng-click="login()">
+                                                Login
+                                            </button>
+                                        </br>
+                                    </br>
+                                </br>
+                            </br>
+                        </form>
+                    </div>
+                </div>
+            </br>
+        </br>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div id="chat" ng-controller="chatController">
+    <div class="top-bar">
+        Room:<span>{{room}}</span>
+        User:<span>{{user}}</span>
+        <button class="btn btn-primary pull-right" ng-click="disconnect()">
+            Logout
+        </button>
+    </div>
+    <div class="msgBox container" id="messageContainer">
+        <div class="col-xs-12" id="messages">
+            <div id="msg_{{$index}}" ng-repeat="msg in messages">
+                <blockquote ng-if="msg.room == room">
+                    {{msg.sender}} : {{msg.text}}
+                    <small>
+                        {{msg.time}}
+                    </small>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+    <form>
+    <div class="footer">
+        <div class="container">
+            <input ng-model="messageInput" placeholder="Type the message..." size="55" type="text"/>
+            <button class="btn btn-primary" ng-click="sendMessage(messageInput)">
+                Send
+            </button>
+        </div>
+    </div>
+    </form>
+</div>

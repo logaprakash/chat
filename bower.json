@@ -1,0 +1,23 @@
+{
+  "name": "chat-app",
+  "description": "Sample chat app using MEAN",
+  "main": "server.js",
+  "authors": [
+    ""
+  ],
+  "license": "ISC",
+  "keywords": [
+    "MEAN"
+  ],
+ "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-ui-router": "^0.4.2"
+  }
+}

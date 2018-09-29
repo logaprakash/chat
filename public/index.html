@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Chat App
+        </title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!-- <style type="text/css">
+            body {
+                height: 100%;
+                max-height: 100%;
+                overflow: auto;
+                width: 100%;
+            }
+        </style> -->
+    </head>
+    <body ng-app="myApp">
+        <div ui-view="content"></div>
+        <script src="socket.io/socket.io.js"></script>
+        <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src=app.js></script>
+        <script src=moment.js></script>
+    </body>
+</html>
